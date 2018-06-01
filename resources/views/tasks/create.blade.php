@@ -2,14 +2,16 @@
 
 @section('content')
 
-    <h1>タスク新規作成ページ</h1>
+    
 
             {!! Form::model($task, ['route' => 'tasks.store']) !!}
             
     <div class="row">
-        <div class="col-xs-6">
+       
             {!! Form::model($task, ['route' => 'tasks.store']) !!}
-            
+                
+                <h1>タスク新規作成ページ</h1>
+                
                 <div class="form-group">
                     {!! Form::label('title', 'タイトル:') !!}
                     {!! Form::text('title', null, ['class' => 'form-control']) !!}
@@ -23,7 +25,7 @@
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary']) !!}
         
             {!! Form::close() !!}
-        </div>
+       
     </div>
             
 
