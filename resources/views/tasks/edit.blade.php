@@ -8,8 +8,8 @@
          <div class= 'col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3'>
             {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
                 <div class="form-group">
-                    {!! Form::label('title', 'タイトル:') !!}
-                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                    {!! Form::label('status', 'タイトル:') !!}
+                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
                 </div>
         
                 <div class="form-group">
